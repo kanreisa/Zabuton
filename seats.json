@@ -1,32 +1,32 @@
-﻿[
+[
   {
     "nick": "kanreisa",
     "role": "司会者",
-    "zabuton": 1
+    "zabuton": 12
   },
   {
     "nick": "takekazuomi",
     "role": "回答者",
-    "zabuton": 1
+    "zabuton": 26
   },
   {
     "nick": "jsakamoto",
     "role": "回答者",
-    "zabuton": 1
+    "zabuton": 0
   },
   {
     "nick": "darkcrash",
     "role": "回答者",
-    "zabuton": 1
+    "zabuton": 12
   },
   {
     "nick": "chack",
     "role": "回答者",
-    "zabuton": 1
+    "zabuton": 8
   },
   {
     "nick": "naoki",
     "role": "回答者",
-    "zabuton": 1
+    "zabuton": 13
   }
 ]

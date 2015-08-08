@@ -32,12 +32,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="server.js" />
+    <Compile Include="web\main.js" />
     <Content Include="seats.json" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="web\index.html" />
+    <Content Include="web\style.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="web\" />

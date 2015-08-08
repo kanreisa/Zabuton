@@ -25,7 +25,7 @@ basic = auth({
 // Seats
 var seats = [];
 try {
-    seats = require('seats.json');
+    seats = require('./seats.json');
 } catch (e) {
     seats = [
         {
@@ -92,6 +92,20 @@ io.on('connection', function (socket) {
 
         io.emit('seats', seats);
 
+        fs.writeFileSync('seats.json', JSON.stringify(seats, null, '  '));
+    });
+    
+    socket.on('zabuton--', function (data) {
+        
+        seats.forEach(function (seat) {
+            
+            if (seat.nick === data.nick) {
+                seat.zabuton--;
+            }
+        });
+        
+        io.emit('seats', seats);
+        
         fs.writeFileSync('seats.json', JSON.stringify(seats, null, '  '));
     });
 
@@ -165,6 +179,7 @@ function httpServer(req, res) {
         if (ext === 'js') { type = 'text/javascript'; }
         if (ext === 'css') { type = 'text/css'; }
         if (ext === 'png') { type = 'image/png'; }
+        if (ext === 'svg') { type = 'image/svg+xml'; }
         if (ext === 'json') { type = 'application/json; charset=utf-8'; }
         
         var head = {

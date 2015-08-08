@@ -11,3 +11,12 @@ div#status {
     div#status.connected {
         background: #c1e6c5;
     }
+
+
+.flagrate, .flagrate > *, .flagrate-grid * {
+    font-size: 18px;
+}
+
+#grid > div > div.flagrate-grid-body > table > tbody > tr {
+    height: 30px;
+}
