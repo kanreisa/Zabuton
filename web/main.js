@@ -10,22 +10,22 @@ function init() {
         cols: [
             {
                 key: 'nick',
-                label: 'nick'
+                label: 'nick',
+                width: 100
             },
             {
                 key: 'role',
                 label: 'role',
-                width: 80
+                width: 70
             },
             {
                 key: 'zabuton',
                 label: '座布団',
-                width: 80
+                width: 70
             },
             {
                 key: 'action',
-                label: 'action',
-                width: 150
+                label: 'action'
             }
         ]
     }).insertTo(gridContainer);
