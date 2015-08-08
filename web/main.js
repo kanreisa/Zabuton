@@ -15,12 +15,12 @@ function init() {
             {
                 key: 'role',
                 label: 'role',
-                width: 100
+                width: 80
             },
             {
                 key: 'zabuton',
                 label: '座布団',
-                width: 100
+                width: 80
             },
             {
                 key: 'action',
