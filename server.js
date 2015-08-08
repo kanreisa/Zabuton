@@ -10,6 +10,8 @@ var port = process.env.port || 1337;
 var app = http.createServer(httpServer).listen(port);
 var io = require('socket.io')(app);
 
+io.set('transports', ['websocket', 'polling']);
+
 // Basic Auth
 var basic = null;
 basic = auth({
