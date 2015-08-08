@@ -15,7 +15,8 @@ var basic = null;
 basic = auth({
     authRealm: 'id/pw is oogiri',
     authList : [
-        'oogiri:oogiri'
+        'oogiri:oogiri',
+        'ogiri:ogiri'
     ]
 });
 
