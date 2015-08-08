@@ -1,0 +1,13 @@
+﻿body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #555;
+}
+
+div#status {
+    background: #eee;
+    padding: 10px 20px;
+}
+
+    div#status.connected {
+        background: #c1e6c5;
+    }
